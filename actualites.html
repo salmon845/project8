@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actualités - Minecraft</title>
+    <link rel="stylesheet" href="project8.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/minecraft logo.svg" alt="Minecraft Logo" class="logo" />
+      <nav>
+        <a href="project8.html">ACCUEIL</a>
+        <a href="project8(2).html">JEUX</a>
+        <a href="project8(3).html">ACTUALITÉS</a>
+      </nav>
+      <button class="btn-login" onclick="toggleLogin()">SE CONNECTER</button>
+    </header>
+    <section class="news">
+      <h2>DERNIÈRES ACTUALITÉS</h2>
+      <div class="news-list">
+        <div class="news-item">
+          <img src="images/endcity-header.avif" alt="Minecraft 1.21" />
+          <div class="news-content">
+            <h3>Building Blocks: End City</h3>
+            <p>The only place you’ll find an elytra</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <img
+            src="images/MINECRAFT_SWA_1170x500_RGB.avif"
+            alt="Minecraft Live 2025"
+          />
+          <div class="news-content">
+            <h3>Minecraft x Swarovski</h3>
+            <p>Adventures crystallized for crafty collectors</p>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <img
+            src="images/Dwellers2_HeaderFinal.jpg"
+            alt="Minecraft Education"
+          />
+          <div class="news-content">
+            <h3>LET’S PLAY: DWELLERS 2.0</h3>
+            <p>Will this horror add-on be too scary for us? (yes)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions d'utilisation</a>
+        <a href="#">Contact</a>
+      </div>
+      <p>&copy; 2025 Mojang Studios / Microsoft</p>
+    </footer>
+
+    <script src="project8.js"></script>
+    <div id="loginPopup" class="login-popup">
+      <form class="login-form">
+        <h3>Connexion</h3>
+        <input type="text" placeholder="Nom d'utilisateur" required />
+        <input type="password" placeholder="Mot de passe" required />
+        <button type="submit">Connexion</button>
+        <button type="button" onclick="toggleLogin()">Fermer</button>
+      </form>
+    </div>
+  </body>
+</html>

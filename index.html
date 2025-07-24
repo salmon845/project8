@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Minecraft</title>
+    <link rel="stylesheet" href="project8.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="images/minecraft logo.svg" alt="Minecraft Logo" class="logo" />
+      <nav>
+        <a href="project8.html">ACCUEIL</a>
+        <a href="project8(2).html">JEUX</a>
+        <a href="project8(3).html">ACTUALITÉS</a>
+      </nav>
+      <button class="btn-login" onclick="toggleLogin()">SE CONNECTER</button>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main-content">
+      <h2>Minecraft</h2>
+      <p>Créez, explorez et survivez seul ou entre amis...</p>
+      <h2>Dungeons</h2>
+      <p>Affrontez des donjons en solo ou à plusieurs...</p>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Promos de l'été sur la Place de marché</h1>
+        <div class="promo-line">
+          <a class="btn" href="#">Voir les offres</a>
+          <p class="promo-description">
+            Jusqu’au 22 juillet, économisez jusqu’à 75 % et obtenez la carte
+            Hermitcraft gratuitement !
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <h2>Abonnez-vous à notre newsletter</h2>
+      <form>
+        <input type="email" placeholder="Votre email" />
+        <button>S'inscrire</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <img
+          src="images/Mojang2020Logo.png"
+          alt="Mojang Logo"
+          class="mojang-logo"
+        />
+        <p class="copyright">© 2025 Mojang AB. TM Microsoft Corporation.</p>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h4>Directives</h4>
+          <a href="#">Directives d'utilisation de Minecraft</a>
+          <a href="#">Gérer le consentement</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Jeux</h4>
+          <a href="#">Minecraft</a>
+          <a href="#">Minecraft Dungeons</a>
+          <a href="#">Minecraft Legends</a>
+          <a href="#">Minecraft Education</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Communauté</h4>
+          <a href="#">Portail d’apprentissage</a>
+          <a href="#">Carrières Mojang</a>
+          <a href="#">Construire un monde meilleur</a>
+          <a href="#">Minecraft, le film</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Boutique</h4>
+          <a href="#">Marketplace</a>
+          <a href="#">Boutique Minecraft</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support</h4>
+          <a href="#">Conseils pour débutants</a>
+          <a href="#">Aide</a>
+          <a href="#">Commentaires</a>
+          <a href="#">Carte du site</a>
+          <a href="#">Télécharger</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Compte</h4>
+          <a href="#">Profil</a>
+          <a href="#">Échanger</a>
+          <a href="#">Nous contacter</a>
+        </div>
+      </div>
+    </footer>
+    <div id="loginPopup" class="login-popup">
+      <form class="login-form">
+        <h3>Connexion</h3>
+        <input type="text" placeholder="Nom d'utilisateur" required />
+        <input type="password" placeholder="Mot de passe" required />
+        <button type="submit">Connexion</button>
+        <button type="button" onclick="toggleLogin()">Fermer</button>
+      </form>
+    </div>
+    <script src="project8.js"></script>
+  </body>
+</html>
